@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    // outDir - то куда происходит сборка 
+    "outDir": "./dist/",
+    // noImplicitAny - нужно явно указывать тип
+    "noImplicitAny": true,
+    // module - ( common js, ecs6) различные способы модульной сборки 
+    "module": "ESNext",
+    // target - код будет компилироваться в версию es5 
+    "target": "es5",
+    // jsx - конструкции react 
+    "jsx": "react-jsx",
+    // allowJs - компилятор будет обрабатывать не только TS, но и JS
+    "allowJs": true,
+    // moduleResolution - то какие импорты будут 
+    "moduleResolution": "node",
+    // esModuleInterop - вместо common js будет обычный import export
+    "esModuleInterop": true,
+    // allowSyntheticDefaultImports - позвоялет использовать import без * as, 
+    // а также библиотеку у которой нет default import
+    "allowSyntheticDefaultImports": true,
+  },
+    "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  }
+}
